@@ -22,8 +22,8 @@ public class CHINHANHDAO {
         while(rs.next()){
             CHINHANH chinhanh = new CHINHANH(rs.getString("maCN"),
                                              rs.getString("ten"),
-                                             rs.getString("diachi"),
-                                             rs.getString("diachi"));
+                                             rs.getString("diaChi"),
+                                             rs.getString("sdt"));
             dsChiNhanh.add(chinhanh);
         }
         return dsChiNhanh;
@@ -38,8 +38,8 @@ public class CHINHANHDAO {
         while(rs.next()){
             CHINHANH chinhanh = new CHINHANH(rs.getString("maCN"),
                                              rs.getString("ten"),
-                                             rs.getString("diachi"),
-                                             rs.getString("diachi"));
+                                             rs.getString("diaChi"),
+                                             rs.getString("sdt"));
             return chinhanh;
         }
         return null;

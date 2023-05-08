@@ -1,7 +1,5 @@
 package entity;
 
-import DBContext.DBContext;
-import java.sql.Connection;
 import java.util.Date;
 
 public class NHANVIEN {
@@ -16,7 +14,17 @@ public class NHANVIEN {
         return maNV;
     }
 
-    public void setMaNV(String maNV) {
+    public NHANVIEN(String maNV, String hoTen, String diaChi, String sdt, Date ngayVaoLam, String maCN) {
+		super();
+		this.maNV = maNV;
+		this.hoTen = hoTen;
+		this.diaChi = diaChi;
+		this.sdt = sdt;
+		this.ngayVaoLam = ngayVaoLam;
+		this.maCN = maCN;
+	}
+
+	public void setMaNV(String maNV) {
         this.maNV = maNV;
     }
 
