@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class DBContext {
-    private final String url = "jdbc:sqlserver://DESKTOP-A67PPOE\\TRAM7:1433;databaseName=GROUP2";
+    private final String url = "jdbc:sqlserver://DESKTOP-A67PPOE\\TRAM7:1433;databaseName=QLBH";
     private final String username = "sa";
     private final String password = "12345";
     public Connection getConnection() throws Exception{
