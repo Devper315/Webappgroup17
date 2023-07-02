@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+   <head>
+      <meta charset="UTF-8">
+      <title>Xác nhận đơn hàng</title>
+      <link rel="stylesheet" type="text/css" th:href="@{/styles.css}">
+   </head>
+   <body>
+   
+      <th:block th:include="/_header"></th:block>
+      <th:block th:include="/_menu"></th:block>
+      
+      <div class="page-title">Hoàn tất!</div>
+      <div class="container">
+         <h3>Cảm ơn quý khách đã đặt hàng</h3>
+         Mã đơn hàng của quý khách là: <span th:utext="${lastOrderedCart.orderNum}"></span>
+         <h3>Vui lòng lưu lại mã đơn hàng để giao dịch</h3>
+      </div>
+      
+      <th:block th:include="/_footer"></th:block>
+      
+   </body>
+</html>

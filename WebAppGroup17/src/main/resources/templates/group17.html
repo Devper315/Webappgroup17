@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+   <head>
+      <meta charset="UTF-8">
+      <title>Admin page</title>
+      <link rel="stylesheet" type="text/css" th:href="@{/styles.css}">
+   </head>
+   <body>
+      <th:block th:include="/_header"></th:block>
+      <th:block th:include="/_menu"></th:block>
+      <h1 style="color:blue;">Admin Page</h1>
+      <ul>
+      <li>Nguyễn Thu Nga</li>
+      <li>Phan Văn Thi</li>
+      <li>Trịnh Quốc Vương</li>
+      <li>Vũ Hồng Quân</li>
+      </ul>
+       <th:block th:include="/_footer"></th:block>
+    </body>
+</html>
